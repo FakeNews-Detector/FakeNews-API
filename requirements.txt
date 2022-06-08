@@ -1,0 +1,17 @@
+beautifulsoup4==4.11.1
+bs4==0.0.1
+Flask==2.1.2
+gensim==4.2.0
+h5py==3.7.0
+keras==2.9.0
+Keras-Preprocessing==1.1.2
+nltk==3.7
+numpy==1.22.4
+pandas==1.4.2
+PySastrawi==1.2.0
+Sastrawi==1.0.1
+scikit-learn==1.1.1
+scipy==1.8.1
+sklearn==0.0
+SQLAlchemy==1.4.37
+tensorflow==2.9.1

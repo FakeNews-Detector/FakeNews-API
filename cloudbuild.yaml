@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/fakenews-detection-352513/cloud-api:$SHORT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/fakenews-detection-352513/cloud-api:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run', 'deploy', 'cloud-api', '--region=asia-southeast1' , '--platform=managed', '--image=gcr.io/fakenews-detection-352513/cloud-api:$SHORT_SHA']
