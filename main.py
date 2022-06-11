@@ -59,7 +59,7 @@ def new_predict(text):
   pred = tokenizer.texts_to_sequences(text)
   prediction = model.predict(pred)
   avg_pred = prediction.mean()
-  if avg_pred > 0.5:
+  if avg_pred >= 0.77:
     text_label = 'Hoax'
   else:
     text_label = 'Valid'
